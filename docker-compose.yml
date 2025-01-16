@@ -191,10 +191,6 @@ services:
       - APPFLOWY_MAILER_SMTP_EMAIL=${APPFLOWY_MAILER_SMTP_EMAIL}
       - APPFLOWY_MAILER_SMTP_PASSWORD=${APPFLOWY_MAILER_SMTP_PASSWORD}
 
-  appflowy-web-app:
-    restart: on-failure
-    image: appflowy-web-app
-
 volumes:
   postgres_data:
   minio_data:
